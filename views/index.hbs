@@ -1,0 +1,17 @@
+<div class="card text-center mx-auto mt-5 " style="width: 36rem;">
+    <div class="card-header">
+        <a class="nav-link" href="/">
+            <h1>URI Shortener</h1>
+        </a>
+    </div>
+    <div class="card-body">
+        <img src="/images/ContentImage_00.png" class="w-75 m-3" alt="...">
+        <form method="POST" action="/result">
+            <div class="input-group mb-3">
+                <input type="text" name="original_url" class="form-control" placeholder="Input original URL here... "
+                    aria-label="original_url" aria-describedby="button-addon2" required>{{!-- 若使用者沒有輸入內容，就按下了送出鈕，需要防止表單送出並提示使用者 --}}
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Shorten It!</button>
+            </div>
+        </form>
+    </div>
+</div>

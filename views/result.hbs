@@ -1,0 +1,23 @@
+<script>
+    function copyEvent() {
+    const copyText = document.querySelector("#new_url").innerText
+    navigator.clipboard.writeText(copyText)
+        .then(() => alert('copied'))
+}
+</script>
+<div class="card text-center mx-auto mt-5 " style="width: 36rem;">
+    <div class="card-header">
+        <a class="nav-link" href="/">
+            <h1>URI Shortener</h1>
+        </a>
+    </div>
+    <div class="card-body">
+        <img src="/images/ContentImage_00.png" class="w-75 m-3" alt="...">
+        <div class="input-group mb-3">
+            <span class="input-group-text form-control" id="new_url" aria-label="new_url"
+                aria-describedby="button-addon2">{{weburl.new_url}}</span>
+            <button class="btn btn-outline-warning" type="button" id="button-addon2"
+                onclick="copyEvent()">Copy!</button>
+        </div>
+    </div>
+</div>
