@@ -25,7 +25,7 @@ router.post('/result', (req, res) => {
             } else {
                 const original_url = req.body.original_url
                 const code = codeGenerator()
-                const new_url = `http://localhost:3000/url_shortener/${code}`
+                const new_url = `https://pacific-refuge-18939-256d8f218a1e.herokuapp.com/url_shortener/${code}`
 
                 return Weburl.create({
                     original_url: original_url,
